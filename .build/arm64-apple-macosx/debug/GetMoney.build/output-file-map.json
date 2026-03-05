@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/master.swiftdeps"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/APIModels.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/APIService.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/AccountRow.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/AddAccountView.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/ContentView.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/FetchBalance.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/GetMoneyApp.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/Models.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.dia"
+  },
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/SubscriptionRow.swift": {
+    "dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.d",
+    "object": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swift.o",
+    "swiftmodule": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow~partial.swiftmodule",
+    "swift-dependencies": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swiftdeps",
+    "diagnostics": "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.dia"
+  }
+}

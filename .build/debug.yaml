@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "GetMoney-arm64-apple-macosx26.0-debug.exe": ["<GetMoney-arm64-apple-macosx26.0-debug.exe>"]
+  "GetMoney-arm64-apple-macosx26.0-debug.module": ["<GetMoney-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<GetMoney-arm64-apple-macosx26.0-debug.exe>","<GetMoney-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<GetMoney-arm64-apple-macosx26.0-debug.exe>","<GetMoney-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/shiyu/Documents/Project/Get_Money/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney":
+    is-mutated: true
+commands:
+  "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney-entitlement.plist"]
+    description: "Write auxiliary file /Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney-entitlement.plist"
+
+  "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/shiyu/Documents/Project/Get_Money/Sources/APIModels.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/APIService.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/AccountRow.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/AddAccountView.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/ContentView.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/FetchBalance.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/GetMoneyApp.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/Models.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/SubscriptionRow.swift"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/sources"]
+    description: "Write auxiliary file /Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/sources"
+
+  "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swift.o"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.product/Objects.LinkFileList"
+
+  "/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<GetMoney-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<GetMoney-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<GetMoney-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<GetMoney-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/Modules/GetMoney.swiftmodule"]
+    outputs: ["<GetMoney-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.GetMoney-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.product/Objects.LinkFileList"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/GetMoney"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug","-o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney","-module-name","GetMoney","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_GetMoney_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/Modules/GetMoney.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.GetMoney-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney-entitlement.plist"]
+    outputs: ["<GetMoney-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/GetMoney"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney-entitlement.plist","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney"]
+
+  "C.GetMoney-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/shiyu/Documents/Project/Get_Money/Sources/APIModels.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/APIService.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/AccountRow.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/AddAccountView.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/ContentView.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/FetchBalance.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/GetMoneyApp.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/Models.swift","/Users/shiyu/Documents/Project/Get_Money/Sources/SubscriptionRow.swift","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/sources"]
+    outputs: ["/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIModels.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/APIService.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AccountRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/AddAccountView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/ContentView.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/FetchBalance.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/GetMoneyApp.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/Models.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/SubscriptionRow.swift.o","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/Modules/GetMoney.swiftmodule"]
+    description: "Compiling Swift Module 'GetMoney' (9 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","GetMoney","-emit-dependencies","-emit-module","-emit-module-path","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/Modules/GetMoney.swiftmodule","-output-file-map","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/output-file-map.json","-incremental","-c","@/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/GetMoney.build/sources","-I","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j16","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/shiyu/Documents/Project/Get_Money/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","GetMoney_main","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","get_money"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/shiyu/Documents/Project/Get_Money/Sources/","/Users/shiyu/Documents/Project/Get_Money/Package.swift","/Users/shiyu/Documents/Project/Get_Money/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
