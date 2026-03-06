@@ -23,6 +23,24 @@ enum ResultStatus {
     case idle, loading, success, error
 }
 
+// MARK: - API Key 列表状态（按账号）
+
+enum APIKeyListStatus: Equatable {
+    case idle
+    case loading
+    case loaded
+    case error
+}
+
+struct APIKeyListState {
+    var status: APIKeyListStatus = .idle
+    var items: [APIKeyDTO] = []
+    var errorMessage: String?
+    var isCreating: Bool = false
+    var groups: [APIGroupDTO] = []
+    var groupRates: GroupRatesDTO?
+}
+
 struct SubscriptionDetail: Identifiable {
     let id = UUID()
     let groupName: String
